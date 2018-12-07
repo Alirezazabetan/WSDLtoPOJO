@@ -31,6 +31,7 @@ If you want to change the builder package you must change addresses in two place
 
 and also in pom.xml file: 
 
+```java
 <configuration>
 					<generatePackage>com.zabetan.behpardakht.ipg.schemas</generatePackage>
 					<generateDirectory>${project.basedir}/src/main/java</generateDirectory>
@@ -39,3 +40,4 @@ and also in pom.xml file:
 						<include>*.wsdl</include>
 					</schemaIncludes>
 </configuration>
+```
