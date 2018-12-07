@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://service.pgw.sw.bps.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns2="http://cxf.apache.org/bindings/xformat" xmlns:ns1="http://interfaces.core.sw.bps.com/" targetNamespace="http://service.pgw.sw.bps.com/" name="PaymentGatewayImplService">
+    <wsdl:import namespace="http://interfaces.core.sw.bps.com/" location="IP.wsdl"> </wsdl:import>
+    <wsdl:binding type="ns1:IPaymentGateway" name="PaymentGatewayImplServiceSoapBinding">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="bpVerifyRequest">
+            <soap:operation style="document" soapAction=""/>
+            <wsdl:input name="bpVerifyRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="bpVerifyRequestResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="bpRefundInquiryRequest">
+            <soap:operation style="document" soapAction=""/>
+            <wsdl:input name="bpRefundInquiryRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="bpRefundInquiryRequestResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="bpRefundVerifyRequest">
+            <soap:operation style="document" soapAction=""/>
+            <wsdl:input name="bpRefundVerifyRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="bpRefundVerifyRequestResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="bpSettleRequest">
+            <soap:operation style="document" soapAction=""/>
+            <wsdl:input name="bpSettleRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="bpSettleRequestResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="bpDynamicPayRequest">
+            <soap:operation style="document" soapAction=""/>
+            <wsdl:input name="bpDynamicPayRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="bpDynamicPayRequestResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="bpVirtualPayRequest">
+            <soap:operation style="document" soapAction=""/>
+            <wsdl:input name="bpVirtualPayRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="bpVirtualPayRequestResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="bpCumulativeDynamicPayRequest">
+            <soap:operation style="document" soapAction=""/>
+            <wsdl:input name="bpCumulativeDynamicPayRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="bpCumulativeDynamicPayRequestResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="bpReversalRequest">
+            <soap:operation style="document" soapAction=""/>
+            <wsdl:input name="bpReversalRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="bpReversalRequestResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="bpPayRequest">
+            <soap:operation style="document" soapAction=""/>
+            <wsdl:input name="bpPayRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="bpPayRequestResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="bpSaleReferenceIdRequest">
+            <soap:operation style="document" soapAction=""/>
+            <wsdl:input name="bpSaleReferenceIdRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="bpSaleReferenceIdRequestResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="bpInquiryRequest">
+            <soap:operation style="document" soapAction=""/>
+            <wsdl:input name="bpInquiryRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="bpInquiryRequestResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="bpChargePayRequest">
+            <soap:operation style="document" soapAction=""/>
+            <wsdl:input name="bpChargePayRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="bpChargePayRequestResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="bpPosRefundRequest">
+            <soap:operation style="document" soapAction=""/>
+            <wsdl:input name="bpPosRefundRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="bpPosRefundRequestResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="bpRefundToPANRequest">
+            <soap:operation style="document" soapAction=""/>
+            <wsdl:input name="bpRefundToPANRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="bpRefundToPANRequestResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="bpRefundRequest">
+            <soap:operation style="document" soapAction=""/>
+            <wsdl:input name="bpRefundRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="bpRefundRequestResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="PaymentGatewayImplService">
+        <wsdl:port name="PaymentGatewayImplPort" binding="tns:PaymentGatewayImplServiceSoapBinding">
+            <soap:address location="https://bpm.shaparak.ir/pgwchannel/services/pgw"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>
